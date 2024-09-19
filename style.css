@@ -1,0 +1,104 @@
+html {
+    font-size: 13px !important;
+}
+
+.fs-7{
+    font-size: 0.95rem !important;
+}
+
+body.app-body {
+    background-color: #F9F9F9;
+}
+
+body.app-body a {
+    text-decoration: none;
+}
+
+body .app-container{
+    font-size: 13px !important;
+    font-weight: 400;
+    font-family: Inter, Helvetica, sans-serif;
+}
+
+.app-container {
+    padding: 0 30px 0 30px;
+    background-color: #F9F9F9;
+}
+
+header .page-head .page-title {
+    color: #071437;
+}
+
+header .campaign-wrapper .dropdown {
+    color: #4B5675;
+}
+
+header .campaign-wrapper .dropdown .btn {
+    width: 170px;
+}
+
+header .campaign-wrapper>a.btn {
+    background-color: #3acf6d;
+    height: calc(1.5em + 1.1rem);
+    width: calc(1.5em + 1.1rem);
+}
+
+header .campaign-wrapper>a.btn:hover {
+    background-color: #04B440;
+    height: calc(1.5em + 1.1rem);
+    width: calc(1.5em + 1.1rem);
+}
+
+header .campaign-wrapper>a i.bi.bi-plus::before {
+    vertical-align: unset;
+}
+
+nav.app-container {
+    margin: 30px 30px 0 30px;
+    background-color: #F1F1F4;
+}
+
+nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:hover {
+    color: #252F4A;
+    background-color: #FFFFFF;
+}
+
+#user-overview-container.app-container .card {
+    margin: 30px 30px 0 0;
+}
+
+#user-overview-container.app-container div .card:last-child {
+    margin: 30px 0 0 0;
+}
+
+#user-overview-container.app-container>.card:last-child {
+    margin: 30px 30px 30px 0;
+}
+
+footer.app-container {
+    background-color: #FFFFFF;
+}
+
+footer #copyright-container {
+    width: 10.5%;
+}
+
+footer #copyright-container #copyright, header .page-head .breadcrumb .breadcrumb-item, header .page-head .breadcrumb .breadcrumb-item a, header .card .card-body .card-text #user-info i, header .card .card-body .card-text #user-info a {
+    color: #99A1B7;
+}
+
+footer #copyright-container #author, header .card .card-body .card-title {
+    color: #252F4A;
+}
+
+footer #menu {
+    width: 14%;
+}
+
+footer #menu a, header .card .card-body .card-text p, nav .nav-pills .nav-item .nav-link {
+    color: #78829D;
+}
+
+footer #menu a:hover, footer #copyright-container #author:hover, header .page-head .breadcrumb .breadcrumb-item a:hover, header .card .card-body .card-text #user-info a:hover {
+    color: #1B84FF;
+}
