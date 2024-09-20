@@ -53,6 +53,11 @@ header .campaign-wrapper>a i.bi.bi-plus::before {
     vertical-align: unset;
 }
 
+header .card #profile-pic-container {
+    height: 60%;
+    width: 36.5%;
+}
+
 nav.app-container {
     margin: 30px 30px 0 30px;
     background-color: #F1F1F4;
