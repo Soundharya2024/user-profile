@@ -23,7 +23,7 @@
             </div>
             <div class="campaign-wrapper d-flex align-items-center justify-content-between">
                 <div class="dropdown">
-                    <button class="btn dropdown-bs-toggle bg-white py-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-bs-toggle bg-white py-2 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Select Campaign
                         <i class="d-inline-block bi bi-chevron-down ms-1"></i>
                     </button>
@@ -35,32 +35,34 @@
                         <li><a class="dropdown-item" href="#">Carbon Campaign</a></li>
                     </ul>
                 </div>
-                <a href="#" class="ms-4 btn p-0"><i class="bi bi-plus fs-2 text-white align-text-top"></i></a>
+                <a href="#" class="ms-4 btn p-0 d-flex justify-content-center align-items-center"><i class="bi bi-plus fs-2 text-white"></i></a>
             </div>
         </div>
-        <div class="card w-100 border border-0" style="height: 65vh;">
-            <img src="https://preview.keenthemes.com/keen/demo1/assets/media/misc/profile-head-bg.jpg" class="card-img-top" style="height: 55%;" alt="Cover Photo">
-            <div class="card-body d-flex justify-content-between" style="height: 35%; padding: 30px; margin-top: -120px">
-                <div class="d-flex flex-column justify-content-between">
+        <div class="card border-0">
+            <div id="card-header" class="position-relative">
+                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/misc/profile-head-bg.jpg" class="card-img-top object-fit-cover" alt="Cover Photo">
+                <div id="profile-pic" class="position-absolute">
                     <div id="profile-pic-container" class="position-relative">
-                        <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-3.jpg" alt="profile picture" class="border border-white border-4" style="height: 100%; border-radius: 20px">
-                        <div class="position-absolute translate-middle start-100 bg-success rounded-circle" style="height:15px; width: 15px; bottom: 25%;"></div>
+                        <img src="https://preview.keenthemes.com/keen/demo1/assets/media/avatars/300-3.jpg" alt="profile picture" class="border border-white border-4">
+                        <div class="position-absolute rounded-circle start-100"></div>
                     </div>
-                    <div class="d-flex flex-column justify-content-end">
-                        <h5 class="card-title fw-bold">Bessie Cooper</h5>
-                        <div class="card-text">
-                            <p class="m-0 fw-semibold">Design is like a fart. If you have to force it, it’s probably shit.</p>
-                            <div id="user-info" class="d-flex align-items-center">
-                                <a href="#" class="">UI/UX Design</a>
-                                <i class="bi bi-dot fs-2"></i>
-                                <a href="#" class="">Austin, TX</a>
-                                <i class="bi bi-dot fs-2"></i>
-                                <a href="#" class="">3,450 Followers</a>
-                            </div>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-between">
+                <div class="d-flex flex-column justify-content-end">
+                    <h5 class="card-title fw-bold">Bessie Cooper <i class="bi bi-patch-check-fill text-primary text-opacity-50"></i></h5>
+                    <div class="card-text">
+                        <p class="m-0 fw-semibold">Design is like a fart. If you have to force it, it’s probably shit.</p>
+                        <div id="user-info" class="d-flex align-items-center">
+                            <a href="#" class="">UI/UX Design</a>
+                            <i class="bi bi-dot fs-2"></i>
+                            <a href="#" class="">Austin, TX</a>
+                            <i class="bi bi-dot fs-2"></i>
+                            <a href="#" class="">3,450 Followers</a>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex align-items-end">
+                <div id="button-group" class="d-flex align-self-end">
                     <button type="button" class="btn btn-light">Send Message</button>
                     <button type="button" class="btn btn-primary ms-3">Follow</button>
                 </div>

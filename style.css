@@ -49,13 +49,44 @@ header .campaign-wrapper>a.btn:hover {
     width: calc(1.5em + 1.1rem);
 }
 
-header .campaign-wrapper>a i.bi.bi-plus::before {
-    vertical-align: unset;
+header .card {
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
-header .card #profile-pic-container {
-    height: 60%;
-    width: 36.5%;
+header .card #card-header>img {
+    height: 200px;
+}
+
+header .card #profile-pic {
+    top: 60%;
+    left: 30px;
+}
+
+header .card #profile-pic-container .rounded-circle {
+    height: 15px;
+    width: 15px;
+    background-color: #17C653;
+    top: 65%;
+    transform: translate(-65%, -50%);
+}
+
+header .card #profile-pic-container img {
+    height: 125px;
+    width: 125px;
+    border-radius: 20px;
+}
+
+header .card .card-body {
+    padding: 50px 30px 30px 30px;
+}
+
+@media (width<708px) {
+    header .card .card-body {
+        flex-direction: column;
+    }
+    header .card .card-body #button-group{
+        align-self: unset !important;
+    }
 }
 
 nav.app-container {
