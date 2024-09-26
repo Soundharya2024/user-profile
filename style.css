@@ -126,47 +126,47 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     padding: 2.25rem;
 }
 
-#user-overview-container .row .card .card-body #header .card-title {
+#user-overview-container .row .card .card-body .header .card-title {
     font-size: 1.275rem;
     color: #071437;
 }
 
-#user-overview-container .row .card .card-body #header .card-subtitle {
+#user-overview-container .row .card .card-body .header .card-subtitle {
     font-size: 1.075rem;
     color: #99A1B7;
 }
 
-#user-overview-container .row .card .card-body #header #more-btn {
+#user-overview-container .row .card .card-body .header .more-btn {
     padding: 0 3px;
     background-color: #99A1B730;
     color: #99A1B7;
 }
 
-#user-overview-container .row .card .card-body #body>div {
+#user-overview-container .row .card .card-body .body>div {
     border-bottom: 1px dashed #DBDFE9;
     padding: 0.75rem 0;
 }
 
-#user-overview-container .row .card .card-body #body>div:last-child {
+#user-overview-container .row .card .card-body .body>div:last-child {
     border-bottom: none;
 }
 
-#user-overview-container .row .card .card-body #body>div span {
+#user-overview-container .row .card .card-body .body>div span {
     font-size: 1.075rem;
 }
 
 /* 1st card only start*/
-#user-overview-container .row .card .card-body #body>div>span {
+#user-overview-container .row .card .card-body .body>div>span {
     color: #4B5675;
 }
 
-#user-overview-container .row .card .card-body #body div div span:nth-child(3) {
+#user-overview-container .row .card .card-body .body div div span:nth-child(3) {
     color: #99A1B7;
 }
 /* 1st card only end*/
 
 /* 2nd card only start*/
-#user-overview-container .row .card .card-body #body>div>i {
+#user-overview-container .row .card .card-body .body>div>i {
     color: #99A1B7;
 }
 /* 2nd card only end*/
@@ -181,6 +181,81 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     padding: 2.5rem 0;
 }
 /* 3rd card only end*/
+
+/* 4th card only start*/
+#user-overview-container .row .card .header4 {
+    background-image: url("https://preview.keenthemes.com/keen/demo1/assets/media/svg/shapes/top-green.png");
+    background-size: cover;
+    height: 250px;
+    padding: 0 2.25rem;
+}
+
+#user-overview-container .row .card .header4 div:first-child {
+    padding-top: 4.25rem;
+}
+
+#user-overview-container .row .card .header4 .more-btn {
+    padding: 0 2px;
+    font-size: 0.70rem;
+}
+
+#user-overview-container .row .card .header4 .more-btn-container {
+    height: 20px;
+    width: 20px;
+    margin-top: 1.75rem;
+}
+/* 4th card only end*/
+
+/* 5th card only start*/
+#user-overview-container .row .card .card-body .body>div>div>.symbol {
+    height: 40px;
+    width: 40px;
+    border-radius: .475rem;
+}
+
+#user-overview-container .row .card .card-body .body>div>div>div>a {
+    color: #252F4A;
+    font-size: 1.075rem
+}
+
+#user-overview-container .row .card .card-body .body>div>div>div>a:hover {
+    color: #1B84FF;
+}
+
+#user-overview-container .row .card .card-body .body>div>div>div>span {
+    color: #99A1B7;
+}
+
+#user-overview-container .row .card .card-body .body>div>a {
+    height: 30px;
+    width: 30px;
+    color: #99A1B7;
+    background-color: #F9F9F9;
+    border-radius: 0.425rem;
+}
+
+#user-overview-container .row .card .card-body .body>div>a:hover {
+    color: #1B84FF;
+}
+
+#user-overview-container .row .card .card-body .body>div>div>span {
+    color: #99A1B7;
+}
+/* 5th card only end*/
+
+/* 6th card only start*/
+#user-overview-container .row .card .card-body .body6>div>div>div>a {
+    font-size: 1.15rem;
+}
+
+#user-overview-container .row .card .card-body .body6>div>div>div>span {
+    font-size: 1.075rem;
+}
+
+#user-overview-container .row .card .card-body .body6>div>div>.progress {
+    height: 6px;
+}
+/* 6th card only end*/
 
 footer.app-container {
     background-color: #FFFFFF;

@@ -96,14 +96,14 @@
             <div class="col-md-6 col-sm-12 ps-0">
                 <div class="card">
                     <div class="card-body">
-                        <div id="header" class="d-flex justify-content-between">
+                        <div class="header d-flex justify-content-between">
                             <div class="d-flex flex-column">
                                 <h5 class="card-title fw-semibold">Highlights</h5>
                                 <h6 class="card-subtitle mb-2 fw-medium">Latest social statistics</h6>
                             </div>
-                            <i id="more-btn" class="bi bi-three-dots rounded align-self-start"></i>
+                            <i class="more-btn bi bi-three-dots rounded align-self-start"></i>
                         </div>
-                        <div id="body">
+                        <div class="body">
                             <div class="d-flex justify-content-between">
                                 <span class="fw-medium">Avg. Client Rating</span>
                                 <div>
@@ -132,14 +132,14 @@
             <div class="col-md-6 col-sm-12 pe-0">
                 <div class="card">
                     <div class="card-body">
-                        <div id="header" class="d-flex justify-content-between">
+                        <div class="header d-flex justify-content-between">
                             <div class="d-flex flex-column">
                                 <h5 class="card-title fw-semibold">External Links</h5>
                                 <h6 class="card-subtitle mb-2 fw-medium">Most used resources</h6>
                             </div>
-                            <i id="more-btn" class="bi bi-three-dots rounded align-self-start"></i>
+                            <i class="more-btn bi-three-dots rounded align-self-start"></i>
                         </div>
-                        <div id="body">
+                        <div class="body">
                             <div class="d-flex justify-content-between">
                                 <span class="fw-medium"><a href="#" class="card-link">Google Analytics</a></span>
                                 <i class="bi bi-box-arrow-up-right"></i>
@@ -172,44 +172,221 @@
             </div>
             <div class="col-md-6 col-sm-12 pe-0">
                 <div class="card">
+                    <div class="header4 d-flex justify-content-between rounded">
+                        <div class="d-flex flex-column">
+                            <span class="card-title text-white fs-2 fw-semibold">My Tasks</span>
+                            <span class="card-subtitle text-white fs-5 fw-medium text-opacity-75">
+                                You have 
+                                <span class="d-inline-flex flex-column">
+                                    <a href="#">4 tasks</a>
+                                    <span class="border-bottom border-2 border-white opacity-50"></span>
+                                </span>
+                                to complete
+                            </span>
+                        </div>
+                        <div class="more-btn-container d-flex justify-content-center align-items-center bg-white bg-opacity-25 rounded">
+                            <i class="more-btn bi bi-three-dots rounded-1 text-white bg-white bg-opacity-25"></i>
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <div class="row w-100 ms-0">
+                            <div class="col-6 bg-secondary"></div>
+                            <div class="col-6 bg-secondary"></div>
+                            <div class="col-6 bg-secondary"></div>
+                            <div class="col-6 bg-secondary"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12 ps-0 pe-0">
                 <div class="card">
                     <div class="card-body">
-                        <div id="header" class="d-flex justify-content-between">
+                        <div class="header d-flex justify-content-between">
                             <div class="d-flex flex-column">
                                 <h5 class="card-title fw-semibold">Recommended for you</h5>
                                 <h6 class="card-subtitle mb-2 fw-medium fs-7">8k social visitors</h6>
                             </div>
                             <button type="button" class="btn btn-light align-self-start">All Courses</button>
                         </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <div class="body">
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="d-flex">
+                                    <div class="symbol d-flex justify-content-center align-items-center bg-danger text-white fs-4 fw-medium me-3">M</div>
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">UI/UX Design</a>
+                                        <span class="fs-7 fw-medium">40+ Courses</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="d-flex align-self-center justify-content-center align-items-center">
+                                    <i class="bi bi-arrow-right-short fs-4"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="d-flex">
+                                    <div class="symbol d-flex justify-content-center align-items-center bg-success text-white fs-4 fw-medium me-3">Q</div>
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">QA Analysis</a>
+                                        <span class="fs-7 fw-medium">18 Courses</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="d-flex align-self-center justify-content-center align-items-center">
+                                    <i class="bi bi-arrow-right-short fs-4"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="d-flex">
+                                    <div class="symbol d-flex justify-content-center align-items-center bg-info text-white fs-4 fw-medium me-3">W</div>
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Web Development</a>
+                                        <span class="fs-7 fw-medium">120+ Courses</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="d-flex align-self-center justify-content-center align-items-center">
+                                    <i class="bi bi-arrow-right-short fs-4"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="d-flex">
+                                    <div class="symbol d-flex justify-content-center align-items-center bg-primary text-white fs-4 fw-medium me-3">M</div>
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Marketing</a>
+                                        <span class="fs-7 fw-medium">50+ Courses</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="d-flex align-self-center justify-content-center align-items-center">
+                                    <i class="bi bi-arrow-right-short fs-4"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="d-flex">
+                                    <div class="symbol d-flex justify-content-center align-items-center bg-warning text-white fs-4 fw-medium me-3">P</div>
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Philosophy</a>
+                                        <span class="fs-7 fw-medium">24+ Courses</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="d-flex align-self-center justify-content-center align-items-center">
+                                    <i class="bi bi-arrow-right-short fs-4"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="d-flex">
+                                    <div class="symbol d-flex justify-content-center align-items-center bg-black text-white fs-4 fw-medium me-3">M</div>
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Mathematics</a>
+                                        <span class="fs-7 fw-medium">24+ Courses</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="d-flex align-self-center justify-content-center align-items-center">
+                                    <i class="bi bi-arrow-right-short fs-4"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 ps-0">
                 <div class="card">
                     <div class="card-body">
-                        <div id="header" class="d-flex justify-content-between">
+                        <div class="header d-flex justify-content-between">
                             <div class="d-flex flex-column">
                                 <h5 class="card-title fw-semibold">Active Lessons</h5>
                                 <h6 class="card-subtitle mb-2 fw-medium fs-7">Avg. 72% completed lessons</h6>
                             </div>
                             <button type="button" class="btn btn-light align-self-start">All Lessons</button>
                         </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <div class="body body6">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/laravel-2.svg" width="30px" class="me-3">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Laravel</a>
+                                        <span class="fw-medium">PHP Framework</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-self-center w-25 align-items-center">
+                                    <div class="progress flex-grow-1 bg-success-subtle me-2" role="progressbar" aria-label="success-bar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-success" style="width: 65%"></div>
+                                    </div>
+                                    <span class="fw-medium">65%</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/vue-9.svg" width="30px" class="me-3">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Vue 3</a>
+                                        <span class="fw-medium">JS Framework</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-self-center w-25 align-items-center">
+                                    <div class="progress flex-grow-1 bg-warning-subtle me-2" role="progressbar" aria-label="success-bar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-warning" style="width: 87%"></div>
+                                    </div>
+                                    <span class="fw-medium">87%</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/bootstrap5.svg" width="30px" class="me-3">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Bootstrap 5</a>
+                                        <span class="fw-medium">CSS Framework</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-self-center w-25 align-items-center">
+                                    <div class="progress flex-grow-1 bg-primary-subtle me-2" role="progressbar" aria-label="success-bar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-primary" style="width: 44%"></div>
+                                    </div>
+                                    <span class="fw-medium">44%</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/angular-icon.svg" width="30px" class="me-3">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Angular 16</a>
+                                        <span class="fw-medium">JS Framework</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-self-center w-25 align-items-center">
+                                    <div class="progress flex-grow-1 bg-info-subtle me-2" role="progressbar" aria-label="success-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-info" style="width: 70%"></div>
+                                    </div>
+                                    <span class="fw-medium">70%</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/spring-3.svg" width="30px" class="me-3">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">Spring</a>
+                                        <span class="fw-medium">Java Framework</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-self-center w-25 align-items-center">
+                                    <div class="progress flex-grow-1 bg-danger-subtle me-2" role="progressbar" aria-label="success-bar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-danger" style="width: 56%"></div>
+                                    </div>
+                                    <span class="fw-medium">56%</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/typescript-1.svg" width="30px" class="me-3">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="fw-semibold">TypeScript</a>
+                                        <span class="fw-medium">Better Tooling</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-self-center w-25 align-items-center">
+                                    <div class="progress flex-grow-1 bg-success-subtle me-2" role="progressbar" aria-label="success-bar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-success" style="width: 82%"></div>
+                                    </div>
+                                    <span class="fw-medium">82%</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
