@@ -2,8 +2,31 @@ html {
     font-size: 13px !important;
 }
 
+@media (max-width: 991px){
+    html {
+        font-size: 12px !important;
+    }
+}
+
 .fs-7{
     font-size: 0.95rem !important;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #FFFFFF;
+    --bs-tooltip-color: #000000;
+}
+
+#user-overview-container .row.g-6 {
+    --bs-gutter-x: 1.25rem;
+    --bs-gutter-y: 1.25rem;
+}
+
+@media (min-width:1200px) {
+    #user-overview-container .row.g-xl-6 {
+        --bs-gutter-x: 2.5rem;
+        --bs-gutter-y: 2.5rem;
+    }
 }
 
 body.app-body {
@@ -21,12 +44,26 @@ body .app-container{
 }
 
 .app-container {
-    padding: 0 30px 0 30px;
+    padding: 0 30px;
     background-color: #F9F9F9;
+    margin-bottom: 2.25rem;
+}
+
+@media (max-width: 767px) {
+    .app-container {
+        padding: 0 20px;
+    }
 }
 
 .app-container button.btn {
     padding: calc(.55rem + 1px) calc(1rem + 1px);
+}
+
+@media (max-width: 991.99px) {
+    header .app-head {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
 }
 
 header .page-head .page-title {
@@ -38,7 +75,7 @@ header .campaign-wrapper .dropdown {
 }
 
 header .campaign-wrapper .dropdown .btn {
-    width: 170px;
+    width: 175px;
 }
 
 header .campaign-wrapper>a.btn {
@@ -93,13 +130,33 @@ header .card .card-body {
     }
 }
 
+header .card .card-body div h5 a {
+    color: #252F4A;
+}
+
+header .card .card-body div h5 a:hover {
+    color: #1B84FF;
+}
+
+header .card .card-body div h5 i {
+    cursor: pointer;
+}
+
 header .card #button-group button:first-child, #user-overview-container .row .card .card-body #button-group button:first-child {
     margin-right: 0.75rem;
 }
 
 nav.app-container {
-    margin: 30px 30px 15px 30px;
     background-color: #F1F1F4;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+    nav.app-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:hover {
@@ -107,19 +164,31 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     background-color: #FFFFFF;
 }
 
-.row>* {
-    padding: 15px !important;
+@media (max-width: 610px) {
+    nav .nav-pills .nav-item:first-child {
+        margin-bottom: .5rem;
+    }
 }
 
-@media (width <= 768px) {
+/* .row>* {
+    padding: 15px !important;
+} */
+
+/* @media (width <= 768px) {
     .row>* {
         padding: 15px 0 !important;
     }
-}
+} */
 
 #user-overview-container .row .card {
     border: 1px solid #F1F1F4;
     border-radius: 0.625rem;
+}
+
+@media (min-width:1200px) {
+    #user-overview-container .row .card {
+        height: 100%;
+    }
 }
 
 #user-overview-container .row .card .card-body {
@@ -142,6 +211,12 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     color: #99A1B7;
 }
 
+#user-overview-container .row .card .card-body .header .more-btn:hover {
+    color:#1B84FF;
+    background-color: #1B84FF50;
+    cursor: pointer;
+}
+
 #user-overview-container .row .card .card-body .body>div {
     border-bottom: 1px dashed #DBDFE9;
     padding: 0.75rem 0;
@@ -156,17 +231,21 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
 }
 
 /* 1st card only start*/
-#user-overview-container .row .card .card-body .body>div>span {
+#user-overview-container .row .card .card-body .body-1>div>span {
     color: #4B5675;
 }
 
-#user-overview-container .row .card .card-body .body div div span:nth-child(3) {
+#user-overview-container .row .card .card-body .body-1 div div span {
+    color: #071437;
+}
+
+#user-overview-container .row .card .card-body .body-1 div div span:nth-child(3) {
     color: #99A1B7;
 }
 /* 1st card only end*/
 
 /* 2nd card only start*/
-#user-overview-container .row .card .card-body .body>div>i {
+#user-overview-container .row .card .card-body .body-2>div>i {
     color: #99A1B7;
 }
 /* 2nd card only end*/
@@ -183,50 +262,115 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
 /* 3rd card only end*/
 
 /* 4th card only start*/
-#user-overview-container .row .card .header4 {
+#user-overview-container .row .card .header-4 {
     background-image: url("https://preview.keenthemes.com/keen/demo1/assets/media/svg/shapes/top-green.png");
     background-size: cover;
     height: 250px;
     padding: 0 2.25rem;
 }
 
-#user-overview-container .row .card .header4 div:first-child {
+#user-overview-container .row .card .header-4 div:first-child {
     padding-top: 4.25rem;
 }
 
-#user-overview-container .row .card .header4 .more-btn {
+#user-overview-container .row .card .header-4 .more-btn {
     padding: 0 2px;
     font-size: 0.70rem;
 }
 
-#user-overview-container .row .card .header4 .more-btn-container {
+#user-overview-container .row .card .header-4 .more-btn-container:hover .more-btn {
+    color: #1B84FF !important;
+    background-color: #1B84FF50 !important;
+}
+
+#user-overview-container .row .card .header-4 .more-btn-container {
     height: 20px;
     width: 20px;
     margin-top: 1.75rem;
 }
+
+#user-overview-container .row .card .header-4 .more-btn-container:hover {
+    cursor: pointer;
+    background-color: #FFFFFF !important;
+}
+
+#user-overview-container .row .card .card-body-4 {
+    margin-top: -2.5rem;
+    padding: 2.25rem;
+}
+
+#user-overview-container .row .card .card-body-4 .row {
+    margin-top: -5rem;
+}
+
+@media (max-width: 991.99px) {
+    #user-overview-container .row .card .card-body-4 .row {
+        --bs-gutter-x: 0.75rem;
+        --bs-gutter-y: 0.75rem;
+    }    
+}
+
+#user-overview-container .row .card .card-body-4 .row .card-container .card {
+    background-color: #F9F9F9;
+    border-radius: .475rem;
+}
+
+#user-overview-container .row .card .card-body-4 .row .card-container .card .card-body {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+#user-overview-container .row .card .card-body-4 .row .card-container .card .card-body i {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    margin-right: 1.25rem;
+}
+
+#user-overview-container .row .card .card-body-4 .row .card-container .card .card-body span {
+    color: #4B5675;
+    font-size: calc(1.35rem + 1.2vw) !important;
+    letter-spacing: -.1rem;
+}
+
+@media (min-width: 1200px) {
+    #user-overview-container .row .card .card-body-4 .row .card-container .card .card-body span {
+        font-size: 2.25rem !important;
+    }
+}
+
+#user-overview-container .row .card .card-body-4 .row .card-container .card .card-body span:last-child {
+    color: #99A1B7;
+    font-size: 1.075rem !important;
+    letter-spacing: unset;
+}
 /* 4th card only end*/
 
+/* 5th and 6th card only start*/
+#user-overview-container .row .card .card-body .body-5-6>div>div>div>a {
+    color: #252F4A;
+}
+
+#user-overview-container .row .card .card-body .body-5-6>div>div>div>a:hover {
+    color: #1B84FF;
+}
+
+#user-overview-container .row .card .card-body .body-5-6>div>div>div>span {
+    color: #99A1B7;
+}
+/* 5th and 6th card only end*/
+
 /* 5th card only start*/
-#user-overview-container .row .card .card-body .body>div>div>.symbol {
+#user-overview-container .row .card .card-body .body-5>div>div>.symbol {
     height: 40px;
     width: 40px;
     border-radius: .475rem;
 }
 
-#user-overview-container .row .card .card-body .body>div>div>div>a {
-    color: #252F4A;
-    font-size: 1.075rem
+#user-overview-container .row .card .card-body .body-5>div>div>div>a {
+    font-size: 1.075rem;
 }
 
-#user-overview-container .row .card .card-body .body>div>div>div>a:hover {
-    color: #1B84FF;
-}
-
-#user-overview-container .row .card .card-body .body>div>div>div>span {
-    color: #99A1B7;
-}
-
-#user-overview-container .row .card .card-body .body>div>a {
+#user-overview-container .row .card .card-body .body-5>div>a {
     height: 30px;
     width: 30px;
     color: #99A1B7;
@@ -234,36 +378,39 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     border-radius: 0.425rem;
 }
 
-#user-overview-container .row .card .card-body .body>div>a:hover {
+#user-overview-container .row .card .card-body .body-5>div>a:hover {
     color: #1B84FF;
 }
 
-#user-overview-container .row .card .card-body .body>div>div>span {
+#user-overview-container .row .card .card-body .body-5>div>div>span {
     color: #99A1B7;
 }
 /* 5th card only end*/
 
 /* 6th card only start*/
-#user-overview-container .row .card .card-body .body6>div>div>div>a {
+#user-overview-container .row .card .card-body .body-6>div>div>div>a {
     font-size: 1.15rem;
 }
 
-#user-overview-container .row .card .card-body .body6>div>div>div>span {
+#user-overview-container .row .card .card-body .body-6>div>div>div>span {
     font-size: 1.075rem;
 }
 
-#user-overview-container .row .card .card-body .body6>div>div>.progress {
+#user-overview-container .row .card .card-body .body-6>div>div>.progress {
     height: 6px;
+}
+
+#user-overview-container .row .card .card-body .body-6>div>div>span {
+    font-size: 13px;
+    color: #99A1B7;
 }
 /* 6th card only end*/
 
 footer.app-container {
     background-color: #FFFFFF;
-    margin-top: 15px;
-}
-
-footer #copyright-container {
-    width: 10.5%;
+    margin: 0;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 }
 
 footer #copyright-container #copyright, header .page-head .breadcrumb .breadcrumb-item, header .page-head .breadcrumb .breadcrumb-item a, header .card .card-body .card-text #user-info i, header .card .card-body .card-text #user-info a {
@@ -274,8 +421,9 @@ footer #copyright-container #author, header .card .card-body .card-title {
     color: #252F4A;
 }
 
-footer #menu {
-    width: 14%;
+footer #menu a {
+    padding-top: .8rem;
+    padding-bottom: .8rem;
 }
 
 footer #menu a, header .card .card-body .card-text p, nav .nav-pills .nav-item .nav-link {
