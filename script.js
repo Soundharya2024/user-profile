@@ -17,18 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function tabNavEvent () {
-  document.querySelector("body.app-body>nav.app-container .nav-link").addEventListener("click", (e) => {
-
-    document.querySelector("body.app-body>nav.app-container .nav-link.active").classList.remove("active");
-    e.target.classList.add("active");
-    const activeTab = document.querySelector("body.app-body>nav.app-container .nav-link.active").textContent;
-  
-    if(activeTab === "Overview") {
-      document.getElementById("user-overview-container").classList.remove("d-none");
-      document.getElementById("user-projects-container").classList.add("d-none");
-    } else if (activeTab === "Projects") {
-      document.getElementById("user-projects-container").classList.remove("d-none");
-      document.getElementById("user-overview-container").classList.add("d-none");
-    }
-  });    
+  document.querySelectorAll("body.app-body>nav.app-container .nav-link").forEach((navLink) => {
+    navLink.addEventListener("click", (e) => {
+      document.querySelector("body.app-body>nav.app-container .nav-link.active").classList.remove("active");
+      e.target.classList.add("active");
+      const activeTab = document.querySelector("body.app-body>nav.app-container .nav-link.active").textContent;
+    
+      if(activeTab === "Overview") {
+        document.getElementById("user-overview-container").classList.remove("d-none");
+        document.getElementById("user-projects-container").classList.add("d-none");
+      } else if (activeTab === "Projects") {
+        document.getElementById("user-projects-container").classList.remove("d-none");
+        document.getElementById("user-overview-container").classList.add("d-none");
+      }
+    });
+  });  
 }
