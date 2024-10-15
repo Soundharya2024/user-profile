@@ -22,6 +22,10 @@ html {
         --bs-gutter-x: 2.5rem;
         --bs-gutter-y: 2.5rem;
     }
+    #user-projects-container .row, #user-campaigns-container .row {
+        --bs-gutter-x: 2.25rem;
+        --bs-gutter-y: 2.25rem;
+    }
 }
 
 body.app-body {
@@ -65,7 +69,7 @@ header .page-head .page-title {
     color: #071437;
 }
 
-header .campaign-wrapper .dropdown, #user-projects-container .header .dropdown {
+header .campaign-wrapper .dropdown, #user-projects-container .header .dropdown, #user-campaigns-container .header .dropdown {
     color: #4B5675;
 }
 
@@ -75,6 +79,10 @@ header .campaign-wrapper .dropdown .btn {
 
 #user-projects-container .header .dropdown .btn {
     width: 125px;
+}
+
+#user-campaigns-container .header .dropdown .btn {
+    width: 100px;
 }
 
 header .campaign-wrapper .dropdown .btn:focus, #user-projects-container .header .dropdown .btn:focus {
@@ -98,7 +106,7 @@ header .campaign-wrapper>a.btn:hover {
     width: calc(1.5em + 1.1rem);
 }
 
-header .card, #user-overview-container .card, #user-projects-container .card {
+header .card, #user-overview-container .card, #user-projects-container .card, #user-campaigns-container .card {
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
@@ -188,7 +196,7 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     }
 } */
 
-#user-overview-container .row .card, #user-projects-container .row .card {
+#user-overview-container .row .card, #user-projects-container .row .card, #user-campaigns-container .row .card {
     border: 1px solid #F1F1F4;
     border-radius: 0.625rem;
 }
@@ -199,7 +207,7 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     }
 }
 
-#user-overview-container .row .card .card-body {
+#user-overview-container .row .card .card-body, #user-projects-container .row .card .card-body, #user-campaigns-container .row .card .card-body {
     padding: 2.25rem;
 }
 
@@ -425,20 +433,9 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     color: #99A1B7;
 }
 
-@media (min-width: 1200px) {
-    #user-projects-container .row {
-        --bs-gutter-x: 2.25rem;
-        --bs-gutter-y: 2.25rem;
-    }    
-}
-
 #user-projects-container .row .card:hover {
     cursor: pointer;
     border: 1px solid #1B84FF;
-}
-
-#user-projects-container .row .card .card-body {
-    padding: 2.25rem;
 }
 
 #user-projects-container .row .card .card-body>div:first-child {
@@ -521,6 +518,81 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     cursor: pointer;
     transition: all .3s ease;
     z-index: 1;
+}
+
+/*Campaigns tab*/
+#user-campaigns-container .header>div>span:first-child {
+    font-size: calc(1.26rem + .12vw);
+    color: #071437;
+}
+
+#user-campaigns-container .header>div>span:last-child {
+    font-size: 1.075rem;
+    color: #99A1B7;
+}
+
+#user-campaigns-container .row .card .card-body .header>div>img {
+    padding: .75rem;
+    border-radius: .475rem;
+    margin-right: 1.25rem;
+}
+
+#user-campaigns-container .row .card .card-body .header>div>span {
+    color: #78829D;
+    font-size: 1.25rem;
+}
+
+#user-campaigns-container .row .card .card-body .header>div>span:hover {
+    cursor: pointer;
+    color: #1B84FF;
+}
+
+#user-campaigns-container .row .card .card-body .header .grid-btn {
+    height: calc(1.5em + 1.1rem + 2px);
+    width: calc(1.5em + 1.1rem + 2px);
+    border-radius: 0.425rem;
+}
+
+#user-campaigns-container .row .card .card-body .header .grid-btn:hover {
+    cursor: pointer;
+    background-color: #1B84FF10;
+}
+
+#user-campaigns-container .row .card .card-body .header .grid-btn i {
+    font-size: calc(1.26rem + .12vw);
+}
+
+#user-campaigns-container .row .card .card-body .body>div:first-child {
+    margin-bottom: .75rem;
+}
+
+#user-campaigns-container .row .card .card-body .body>div:first-child span {
+    font-size: calc(1.4rem + 1.8vw);
+}
+
+#user-campaigns-container .row .card .card-body .body>div:nth-child(2) {
+    font-size: 1.075rem;
+    margin-bottom: 1.25rem;
+}
+
+#user-campaigns-container .row .card .card-body .body>div:nth-child(2)>span:last-child {
+    color: #99A1B7;
+}
+
+#user-campaigns-container .row .card .card-body .body>div:last-child>span:first-child {
+    color: #4B5675;
+    font-size: .85rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+#user-campaigns-container .row .card .card-body .body>div:last-child>span:last-of-type {
+    color: #99A1B7;
+}
+
+#user-campaigns-container .row .card .card-body .body>div:last-child>i {
+    font-size: 1.075rem;
+    color: #99A1B775;
 }
 
 footer.app-container {

@@ -22,14 +22,18 @@ function tabNavEvent () {
       document.querySelector("body.app-body>nav.app-container .nav-link.active").classList.remove("active");
       e.target.classList.add("active");
       const activeTab = document.querySelector("body.app-body>nav.app-container .nav-link.active").textContent;
-    
-      if(activeTab === "Overview") {
-        document.getElementById("user-overview-container").classList.remove("d-none");
-        document.getElementById("user-projects-container").classList.add("d-none");
-      } else if (activeTab === "Projects") {
-        document.getElementById("user-projects-container").classList.remove("d-none");
-        document.getElementById("user-overview-container").classList.add("d-none");
-      }
+      tabChange(activeTab);
     });
   });  
+}
+
+function tabChange(activeTab) {
+  activeTab = activeTab.toLowerCase();
+  document.getElementById("user-projects-container").classList.add("d-none");
+  document.getElementById("user-overview-container").classList.add("d-none");
+  document.getElementById("user-campaigns-container").classList.add("d-none");
+  document.getElementById("user-documents-container").classList.add("d-none");
+  document.getElementById("user-followers-container").classList.add("d-none");
+  document.getElementById("user-activity-container").classList.add("d-none");
+  document.getElementById(`user-${activeTab}-container`).classList.remove("d-none");
 }

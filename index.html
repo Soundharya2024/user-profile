@@ -434,11 +434,11 @@
     </div>
     <div id="user-projects-container" class="app-container d-none">
         <div class="header d-flex justify-content-between align-items-center mb-4">
-            <div class="d-flex my-2 align-items-center">
+            <div class="d-flex my-2 align-items-baseline">
                 <span class="fw-semibold">My Projects</span>
                 <span class="fw-medium ms-2">Active</span>
             </div>
-            <div class="d-flex">
+            <div class="d-flex align-items-center">
                 <div class="dropdown me-3">
                     <button class="btn dropdown-bs-toggle bg-white border-0 py-2 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Active
@@ -722,6 +722,273 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="user-campaigns-container" class="app-container d-none">
+        <div class=" header d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex my-2 align-items-baseline">
+                <span class="fw-semibold">My Campaigns</span>
+                <span class="fw-medium ms-2">30 days</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="dropdown me-3">
+                    <button class="btn dropdown-bs-toggle bg-white border-0 py-2 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        30 Days
+                        <i class="d-inline-block bi bi-chevron-down ms-1"></i>
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item d-flex justify-content-between" href="#">30 Days <i class="bi bi-check text-primary invisible"></i></a></li>
+                        <li><a class="dropdown-item d-flex justify-content-between" href="#">90 Days <i class="bi bi-check text-primary invisible"></i></a></li>
+                        <li><a class="dropdown-item d-flex justify-content-between" href="#">6 Months <i class="bi bi-check text-primary invisible"></i></a></li>
+                        <li><a class="dropdown-item d-flex justify-content-between" href="#">1 Year <i class="bi bi-check text-primary invisible"></i></a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm">Add Campaign</button>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/twitch.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Twitch Posts</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">$500.00</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="text-danger fw-semibold me-2">+40.5%</span>
+                                <span class="fw-medium">more impressions</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">0.5%</span>
+                                <span class="fs-7">MRR</span>
+                                <i class="bi bi-exclamation-circle-fill ms-1" data-bs-toggle="tooltip" data-bs-title="Recurring"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/twitter.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Twitter Followers</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">807k</span>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-arrow-up-right text-success me-1"></i>
+                                <span class="text-success fw-semibold me-2">+17.62%</span>
+                                <span class="fw-medium">Followers growth</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">5%</span>
+                                <span class="fs-7">New trials</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/spotify.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Spotify Listeners</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">1,073</span>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-arrow-down-left text-danger me-1"></i>
+                                <span class="text-danger fw-semibold me-2">+10.45%</span>
+                                <span class="fw-medium">Less comments than usual</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">40%</span>
+                                <span class="fs-7">Impressions</span>
+                                <i class="bi bi-exclamation-circle-fill ms-1" data-bs-toggle="tooltip" data-bs-title="This is the total number of new non-trial"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/pinterest-p.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Pinterest Posts</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">97</span>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-arrow-up-right text-success me-1"></i>
+                                <span class="text-success fw-semibold me-2">+26.1%</span>
+                                <span class="fw-medium">More posts</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">10%</span>
+                                <span class="fs-7">Spend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/github.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Github Contributes</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">4,109</span>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-arrow-down-left text-danger me-1"></i>
+                                <span class="text-danger fw-semibold me-2">+32.8%</span>
+                                <span class="fw-medium">Less contributions</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">40%</span>
+                                <span class="fs-7">Dispute</span>
+                                <i class="bi bi-exclamation-circle-fill ms-1" data-bs-toggle="tooltip" data-bs-title="This is the total number of new non-trial"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/youtube-play.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Youtube Subscribers</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">354</span>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-arrow-up-right text-success me-1"></i>
+                                <span class="text-success fw-semibold me-2">+29.45%</span>
+                                <span class="fw-medium">Subscribers growth</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">40%</span>
+                                <span class="fs-7">Subscribers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/telegram.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Telegram Posts</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">566</span>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-arrow-up-right text-success me-1"></i>
+                                <span class="text-success fw-semibold me-2">+11.4%</span>
+                                <span class="fw-medium">more clicks</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">40%</span>
+                                <span class="fs-7">Profit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="header d-flex justify-content-between mb-4">
+                            <div class="d-flex align-items-center">
+                                <img src="https://preview.keenthemes.com/keen/demo1/assets/media/svg/brand-logos/reddit.svg" alt="logo" class="bg-light" height="45px" width="45px">
+                                <span class="fw-medium">Reddit Awards</span>
+                            </div>
+                            <div class="grid-btn align-self-start d-inline-flex justify-content-center align-items-center">
+                                <i class="bi bi-grid-fill text-primary text-opacity-75"></i>
+                            </div>
+                        </div>
+                        <div class="body d-flex flex-column">
+                            <div class="d-block">
+                                <span class="fw-semibold">2.1M</span>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bi bi-arrow-up-right text-success me-1"></i>
+                                <span class="text-success fw-semibold me-2">-46.7%</span>
+                                <span class="fw-medium">more adds</span>
+                            </div>
+                            <div class="d-flex fw-medium align-items-center">
+                                <span class="badge bg-light py-2 me-2">0.0%</span>
+                                <span class="fs-7">Retention</span>
+                                <i class="bi bi-exclamation-circle-fill ms-1" data-bs-toggle="tooltip" data-bs-title="This table displays revenue retention"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="user-documents-container" class="app-container d-none text-center">
+        <img src="under-construction.png" alt="The page is under construction">
+    </div>
+    <div id="user-followers-container" class="app-container d-none"></div>
+    <div id="user-activity-container" class="app-container d-none text-center">
+        <img src="under-construction.png" alt="The page is under construction">
     </div>
     <footer class="app-container d-flex justify-content-between align-items-center flex-md-row flex-column">
         <div id="copyright-container" class="d-flex justify-content-between order-md-1 order-2">
