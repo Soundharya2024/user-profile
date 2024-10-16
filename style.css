@@ -22,9 +22,12 @@ html {
         --bs-gutter-x: 2.5rem;
         --bs-gutter-y: 2.5rem;
     }
-    #user-projects-container .row, #user-campaigns-container .row {
+    #user-projects-container .row, #user-campaigns-container .row, #user-followers-container .row {
         --bs-gutter-x: 2.25rem;
         --bs-gutter-y: 2.25rem;
+    }
+    #user-followers-container .row {
+        margin-bottom: 2.25rem;
     }
 }
 
@@ -106,7 +109,7 @@ header .campaign-wrapper>a.btn:hover {
     width: calc(1.5em + 1.1rem);
 }
 
-header .card, #user-overview-container .card, #user-projects-container .card, #user-campaigns-container .card {
+header .card, #user-overview-container .card, #user-projects-container .card, #user-campaigns-container .card, #user-followers-container .card {
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
@@ -178,6 +181,7 @@ nav.app-container {
 nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:hover {
     color: #252F4A;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 @media (max-width: 610px) {
@@ -196,7 +200,7 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     }
 } */
 
-#user-overview-container .row .card, #user-projects-container .row .card, #user-campaigns-container .row .card {
+#user-overview-container .row .card, #user-projects-container .row .card, #user-campaigns-container .row .card, #user-followers-container .row .card {
     border: 1px solid #F1F1F4;
     border-radius: 0.625rem;
 }
@@ -207,7 +211,7 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
     }
 }
 
-#user-overview-container .row .card .card-body, #user-projects-container .row .card .card-body, #user-campaigns-container .row .card .card-body {
+#user-overview-container .row .card .card-body, #user-projects-container .row .card .card-body, #user-campaigns-container .row .card .card-body, #user-followers-container .row .card .card-body {
     padding: 2.25rem;
 }
 
@@ -423,12 +427,12 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
 /* 6th card only end*/
 
 /*Projects tab*/
-#user-projects-container .header>div>span:first-child {
+#user-projects-container .header>div>span:first-child, #user-campaigns-container .header>div>span:first-child, #user-followers-container .header>div>span:first-child {
     font-size: calc(1.26rem + .12vw);
     color: #071437;
 }
 
-#user-projects-container .header>div>span:last-child {
+#user-projects-container .header>div>span:last-child, #user-campaigns-container .header>div>span:last-child, #user-followers-container .header>div>span:last-child {
     font-size: 1.075rem;
     color: #99A1B7;
 }
@@ -521,16 +525,6 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
 }
 
 /*Campaigns tab*/
-#user-campaigns-container .header>div>span:first-child {
-    font-size: calc(1.26rem + .12vw);
-    color: #071437;
-}
-
-#user-campaigns-container .header>div>span:last-child {
-    font-size: 1.075rem;
-    color: #99A1B7;
-}
-
 #user-campaigns-container .row .card .card-body .header>div>img {
     padding: .75rem;
     border-radius: .475rem;
@@ -593,6 +587,105 @@ nav .nav-pills .nav-item .nav-link.active, nav .nav-pills .nav-item .nav-link:ho
 #user-campaigns-container .row .card .card-body .body>div:last-child>i {
     font-size: 1.075rem;
     color: #99A1B775;
+}
+
+/*Followers tab*/
+#user-followers-container .row .card .card-body>.pro-pic-container {
+    margin-bottom: 1.25rem;
+}
+
+/*Profile without profile pics*/
+#user-followers-container .row .card .card-body>.pro-pic-container>div:first-child{
+    height: 65px;
+    width: 65px;
+    font-size: calc(1.325rem + .9vw);
+}
+
+#user-followers-container .row .card .card-body>.pro-pic-container>.online-indicator {
+    height: 15px;
+    width: 15px;
+    top: 75%;
+    left: 75%;
+}
+
+#user-followers-container .row .card .card-body>div:nth-of-type(2)>span:first-child {
+    color: #252F4A;
+    font-size: 1.25rem;
+}
+
+#user-followers-container .row .card .card-body>div:nth-of-type(2)>span:first-child:hover {
+    cursor: pointer;
+    color: #1B84FF;
+}
+
+#user-followers-container .row .card .card-body>div:nth-of-type(2)>span:last-child {
+    color: #99A1B7;
+}
+
+#user-followers-container .row .card .card-body>div:last-of-type {
+    margin-bottom: 1.25rem;
+}
+
+#user-followers-container .row .card .card-body>div:last-of-type>div {
+    margin-bottom: .75rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    min-width: 90px;
+    border-style: dashed !important;
+    border-radius: .475rem;
+}
+
+#user-followers-container .row .card .card-body>div:last-of-type>div>span:first-child {
+    color: #4B5675;
+    font-size: 1.075rem;
+}
+
+#user-followers-container .row .card .card-body>div:last-of-type>div>span:last-child {
+    color: #99A1B7;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="following"] {
+    background-color: #1B84FF10;
+    color: #1B84FF;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="following"]:hover {
+    background-color : #1B84FF;
+    color: #FFFFFF;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="follow"] {
+    background-color: #F1F1F4;
+    color: #252F4A;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="follow"]:hover {
+    background-color : #99A1B750;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="f-loading"] {
+    pointer-events: none;
+    background-color: #F1F1F4;
+    color: #252F4A75;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="fg-loading"] {
+    pointer-events: none;
+    background-color: #1B84FF10;
+    color: #1B84FF75;
+}
+
+#user-followers-container .row .card .card-body>button>i.btn-icon {
+    font-size: 1.5rem;
+    padding-right: 0.35rem;
+}
+
+#user-followers-container .row .card .card-body>button[data-follow-status="f-loading"], #user-followers-container .row .card .card-body>button[data-follow-status="fg-loading"] {
+    padding: calc(.55rem + 1px) calc(1rem + 1px);
+}
+
+#user-followers-container>div:last-child>button {
+    padding: calc(.775rem + 1px) calc(1.5rem + 1px);
 }
 
 footer.app-container {
